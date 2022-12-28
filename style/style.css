@@ -1,0 +1,172 @@
+:root {
+    --main_color: #0A3871;
+    --p_color: #495057;
+  }
+html{
+    /*font-size: 62.5%; Reset para REMS - 62.5% = 10px de 16 px*/
+    box-sizing: border-box;
+}
+*, *:before, * :after{
+    box-sizing: inherit;
+}
+
+body{
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+
+   /*  padding: 10% 5%; */
+}
+header{
+   width: 100%;
+   padding: 10% 5%;
+}
+main{
+    width: 100%;
+    padding: 0 5%;
+}
+.mensaje img, h2, p{
+    display: block;
+}
+header img{
+    margin-bottom: 18%;
+    width: 10%;
+}
+@media (min-width: 780px){
+    body{
+        background: #F3F5FC;
+    }
+    header{
+        padding-bottom: 5%;
+    }
+    header img{
+        width: 5%;
+        margin-bottom: 8%;
+    }
+}
+@media (min-width: 1020px){
+    header{
+        padding: 3% 5%;
+        padding-bottom: 0;
+     }
+    header img{
+        width: 2.5%;
+        margin-bottom: 5%;
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.entrada{
+    white-space: pre-wrap;
+    width: 100%;
+    margin-bottom: 10%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--main_color);
+    font-weight: 400;
+    font-size: 32px;
+    resize: none;
+}
+.entrada::placeholder{
+    color: var(--main_color);
+}
+.mensaje img{
+    width: 100%;
+}
+p{
+    color: var(--p_color);
+}
+form > p:nth-child(2){
+    margin-bottom: 25px;
+}
+.botones{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.boton{
+    display: block;
+    width: 100%;
+    padding: 6% 0;
+    border-radius: 24px;
+    border: 1px solid var(--main_color);
+    background: transparent;
+    color: var(--main_color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s all;
+}
+.boton:hover{
+    background: #1151a0;
+    color: #FFFFFF;
+}
+.botones input:nth-child(1){
+    margin-bottom: 20px;
+    background: var(--main_color);
+    color: #FFFFFF;
+}
+.botones input:nth-child(1):hover{
+    background: #ffffff;
+    color: #1151a0;
+}
+@media (min-width: 780px){
+    
+    .boton{
+        width: 49%;
+        margin-left: 1%;
+        padding: 3% 0;
+    }
+    .botones input:nth-child(1){
+        margin: 0 1% 0 0;
+    }
+}
+@media (min-width: 1020px){
+    form{
+        width: 53%;
+        margin-right: 2%;
+        margin-left: 14%;
+    }
+    .entrada{
+        font-size: 28px;
+        margin-bottom: 10%;
+        width: 100%;
+    }
+}
+.mensaje{
+    margin: 55px 0;
+    background: #FFFFFF;
+    padding: 37px;
+    border-radius: 24px;
+    box-shadow: 1px 1px 10px #000000;
+    text-align: center; 
+}
+.mensaje h2{
+   font-size: 25px;
+   color: #000000;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+@media (min-width: 1020px){
+    .mensaje{
+        width: 24%;
+        height: 545px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 0;
+        margin-left: 1%;
+        padding: 20px;
+        box-shadow: none;
+        position: relative;
+        top: -107px;
+    }
+    .mensaje h2{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .mensaje p{
+        font-size: 15px;
+    }
+}
